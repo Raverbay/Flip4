@@ -1,27 +1,23 @@
-# MediaBay Fashion Master Theme V2 — Editorial Store
+# MediaBay Fashion Master Theme V3 — Flip&Co Demo
 
-A premium, non-ecommerce fashion-store theme designed as a digital brand experience rather than a product catalogue.
+Premium editorial fashion-retail theme for MediaBay.
 
-## Design idea
-- No product grid
-- No shopping cart
-- No generic stock photography
-- Oversized real store logo as the visual hero
-- Brand Atlas using real brand marks via Simple Icons CDN, with text fallback
-- Editorial sections for philosophy, worlds, story and reputation
-- Physical-store CTA as the conversion goal
-- Mobile-first responsive layout
-- Subtle reveal motion and scroll progress
+## Concept
+This is not an e-commerce template. The site is a digital storefront: brand discovery, collection previews, store reputation and a clear invitation to visit the physical store.
 
-## Data model
-Edit `content.json` to create a new client site. Brand records use:
-- `name`
-- `slug` (Simple Icons slug)
-- `url`
+## Structure
+- `index.html` — main editorial storefront
+- `brand.html?brand=nike` — reusable brand collection page
+- `engine.js` — main renderer
+- `brand.js` — brand page renderer
+- `content.json` — all client content and brand collections
+- `assets/` — only the transparent Flip&Co logo
 
-The theme is reusable for fashion boutiques, footwear, accessories and lifestyle retailers.
+## Brand system
+All 16 demo brands are represented in the Brand Atlas. Their logos are rendered as brand SVG icons from Simple Icons (`cdn.simpleicons.org`) and are linked to internal collection pages. For a production client deployment, replace these with official brand-approved logo assets where required by the brand guidelines.
+
+## No e-commerce
+There are no prices, carts or product checkout flows. Brand pages show an editorial selection of what visitors can expect to find in-store.
 
 ## GitHub Pages
-Upload the files in this package to the repository root, preserving the `assets/` folder.
-
-The brand logos are loaded from `cdn.simpleicons.org`. For a production client deployment, replace those URLs with brand-approved logo assets when the retailer has the appropriate usage rights.
+Upload the contents of this folder to the repository root, preserving `assets/`. Then enable GitHub Pages from the `main` branch and `/ (root)`.

@@ -22,7 +22,7 @@
   const bg=$('#brandGrid');
   cfg.brands.forEach((b,i)=>{
     const a=document.createElement('a'); a.className='brand-item reveal'; a.href=b.url; a.target='_blank'; a.rel='noopener'; a.style.setProperty('--i',i);
-    a.innerHTML=`<span class="brand-number">${String(i+1).padStart(2,'0')}</span><div class="brand-logo-wrap"><img src="https://cdn.simpleicons.org/${b.slug}/11120f" alt="${b.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('logo-fallback')"><span class="brand-fallback">${b.name}</span></div><span class="brand-arrow">↗</span>`;
+    a.href=`brand.html?brand=${encodeURIComponent(b.slug)}`; a.removeAttribute('target'); a.removeAttribute('rel'); a.innerHTML=`<span class="brand-number">${String(i+1).padStart(2,'0')}</span><div class="brand-logo-wrap"><img src="https://cdn.simpleicons.org/${b.slug}/11120f" alt="${b.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('logo-fallback')"><span class="brand-fallback">${b.name}</span></div><div class="brand-name-hidden">${b.name}</div><span class="brand-arrow">↗</span>`;
     bg.appendChild(a);
   });
 
