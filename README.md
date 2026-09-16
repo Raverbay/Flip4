@@ -21,3 +21,10 @@ There are no prices, carts or product checkout flows. Brand pages show an editor
 
 ## GitHub Pages
 Upload the contents of this folder to the repository root, preserving `assets/`. Then enable GitHub Pages from the `main` branch and `/ (root)`.
+
+
+## V4 editorial update
+- Uses the supplied high-resolution Flip&Co logo as a transparent asset.
+- Uses the supplied store entrance photo as a premium homepage editorial feature.
+- Removed the previous photographic assets from the theme.
+- Homepage remains non-commerce: the store image drives the physical-store experience.
