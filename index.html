@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f2f0ea">
+<title>Flip&Co — Cagliari · Since 1986</title>
+<meta name="description" content="Flip&Co — multibrand fashion store in Cagliari. Uomo, donna, bambino. Since 1986.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><img class="loaderLogo" src="assets/logo-transparent-cropped.png" alt="Flip&Co"><div class="loaderLine"><i></i></div></div>
+<div class="progress" aria-hidden="true"><span></span></div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brandmark" href="#top" aria-label="Flip&Co"><img id="navLogo" src="" alt="Flip&Co"></a>
+    <div class="header-center"><span class="micro">CAGLIARI / 1986—2026</span></div>
+    <div class="header-actions">
+      <div class="language"><button class="active">IT</button><button>EN</button></div>
+      <button class="menu-button" id="menuButton" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div id="menuPanel" class="menu-panel" aria-hidden="true">
+  <div class="menu-panel-inner">
+    <span class="micro">NAVIGATION</span>
+    <nav id="mobileNav"></nav>
+    <div class="menu-meta"><span id="menuLocation"></span><a id="menuWhatsapp" target="_blank" rel="noopener">WHATSAPP ↗</a></div>
+  </div>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-gridline"></div>
+    <div class="hero-top"><span id="heroKicker" class="micro"></span><span class="hero-index">001 / 006</span></div>
+    <div class="hero-center"><img id="heroLogo" class="hero-logo" alt="Flip&Co"><div class="hero-rule"></div></div>
+    <div class="hero-bottom"><div id="heroHeadline" class="hero-headline"></div><div class="hero-meta"><span id="heroMeta"></span><span class="scroll-cue">SCROLL <i></i></span></div></div>
+  </section>
+
+  <section class="intro section-pad reveal">
+    <div class="intro-grid">
+      <div><span class="micro">01 / PHILOSOPHY</span><h2 id="introTitle" class="display heading-reveal"></h2></div>
+      <div class="intro-copy"><p id="introLead" class="lead"></p><p id="introBody" class="body-copy"></p></div>
+    </div>
+  </section>
+
+  <section id="worlds" class="worlds section-pad">
+    <div class="section-head reveal"><div><span class="micro">02 / THE WORLDS</span><h2 class="display heading-reveal">TRE MODI<br>DI ESSERE.</h2></div><span class="micro muted">MEN / WOMEN / KIDS</span></div>
+    <div id="worldGrid" class="world-grid"></div>
+  </section>
+
+  <section id="brands" class="brand-section section-pad">
+    <div class="brand-top reveal"><div><span class="micro">03 / THE BRAND ATLAS</span><h2 class="display heading-reveal">NOMI CHE<br>CONOSCI.</h2></div><div class="brand-note"><span class="brand-count">16</span><span class="micro">SELECTED<br>BRANDS</span></div></div>
+    <p class="brand-intro reveal">Una selezione internazionale, vista da Cagliari. Ogni logo è una scelta, non un riempitivo.</p>
+    <div id="brandGrid" class="brand-grid"></div>
+  </section>
+
+  <section id="story" class="story section-pad">
+    <div class="story-grid">
+      <div class="reveal"><span id="storyKicker" class="micro"></span><h2 id="storyTitle" class="display heading-reveal"></h2></div>
+      <div class="story-copy reveal"><p id="storyBody" class="story-lead"></p><div id="storyFacts" class="story-facts"></div></div>
+    </div>
+  </section>
+
+  <section id="store" class="store section-pad">
+    <div class="section-head reveal"><div><span id="storeKicker" class="micro"></span><h2 id="storeTitle" class="display heading-reveal"></h2></div></div>
+    <div class="store-stage reveal">
+      <div class="store-coordinate"><span>39°13′ N</span><span>09°07′ E</span></div>
+      <div class="store-word">CAGLIARI</div>
+      <div class="store-card">
+        <span class="micro">FLIP&CO / STORE</span><h3 id="storeAddress"></h3>
+        <div class="facts"><div><span>HOURS</span><strong id="storeHours"></strong></div><div><span>PHONE</span><strong id="storePhone"></strong></div></div>
+        <div class="store-actions"><a id="mapLink" target="_blank" rel="noopener" class="pill">OPEN MAP ↗</a><a id="waLink" target="_blank" rel="noopener" class="pill dark">WHATSAPP ↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="review-band">
+    <div class="section-pad review-grid"><div class="reveal"><span class="micro">05 / REPUTATION</span><div id="rating" class="rating"></div><span id="reviewCount" class="micro"></span></div><div class="reveal"><h2 id="reviewTitle" class="display heading-reveal"></h2><p id="reviewBody" class="body-copy light"></p></div></div>
+  </section>
+
+  <section id="contact" class="contact section-pad"><span class="micro reveal">06 / CONTACT</span><h2 id="contactTitle" class="contact-title heading-reveal"></h2><div class="contact-row reveal"><span id="contactMeta" class="micro"></span><div><a id="instagramLink" class="pill" target="_blank" rel="noopener">INSTAGRAM ↗</a><a id="contactWa" class="pill dark" target="_blank" rel="noopener">START A CONVERSATION ↗</a></div></div></section>
+</main>
+<footer><div class="section-pad footer-inner"><div><img id="footerLogo" alt="Flip&Co"><span class="micro">FLIP&CO · CAGLIARI · SINCE 1986</span></div><div class="footer-links"><a href="#worlds">Worlds</a><a href="#brands">Brands</a><a href="#story">Story</a><a href="#store">Store</a></div><span class="micro">MEDIA­BAY FASHION MASTER THEME · 2026</span></div></footer>
+<script src="engine.js"></script>
+</body>
+</html>
